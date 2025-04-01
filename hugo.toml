@@ -1,3 +1,7 @@
-baseURL = 'https://example.org/'
+# baseURL = '${site.getBaseUrl()}'
+baseURL = 'http://example.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '${site.getTitle()}'
+
+[params]
+    avatarImg = "/images/werdado_sign.png"
