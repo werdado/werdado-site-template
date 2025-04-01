@@ -2,12 +2,13 @@
 {{ partial "profile.html" . }}
 
 <div id="list-page">
-    {{ $pages := .Site.RegularPages }}
+    {{ $pages := where .Pages "Section" "index" }}
     {{ $paginator := .Paginate ($pages) }}
     {{ range $paginator.Pages }}
         {{ $title := .Title }}
         {{ $summary := .Summary }}
         <section class="item">
+        
           <div>
             <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
             <div class ="date">

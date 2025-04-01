@@ -1,7 +1,16 @@
 # baseURL = '${site.getBaseUrl()}'
 baseURL = 'http://example.com'
-languageCode = 'en-us'
+defaultContentLanguage = 'pl'
+languageCode = 'pl_PL'
+
 title = '${site.getTitle()}'
 
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+
 [params]
+    index = "Rejestr"
+    about = "Czym jest werdado?"
     avatarImg = "/images/werdado_sign.png"

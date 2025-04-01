@@ -1,0 +1,16 @@
+home = " Strona główna"
+tags = "Tagi"
+
+404title = "404 title"
+404subtitle = "404 subtitle"
+readMore = "Czytaj więcej &hellip;"
+
+publishDate = '{{ .PublishDate.Format "1 January 2006" }}'
+publishDateFull = 'Opublikowano {{ .PublishDate.Format "1 January 2006 3:04" }}'
+publishDateShort = '{{ .PublishDate.Format "1/12/2006" }}'
+wordCount = "{{ .WordCount }} słów"
+
+[minuteRead]
+    one = 'Przeczytasz w minutę'
+    few = 'Przeczytasz w {{ .ReadingTime }} minuty'
+    other = 'Przeczytasz w {{ .ReadingTime }} minut'
