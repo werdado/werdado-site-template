@@ -6,8 +6,8 @@ languageCode = 'pl_PL'
 title = '${site.getTitle()}'
 
 [outputs]
-  home = ['html', 'rss']
-  section = ['html', 'rss']
+  home = ['html', 'rss', 'json']
+  section = ['html', 'rss', 'json']
   taxonomy = ['html']
 
 [params]
