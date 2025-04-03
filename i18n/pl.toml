@@ -5,9 +5,9 @@ tags = "Tagi"
 404subtitle = "404 subtitle"
 readMore = "Czytaj więcej &hellip;"
 
-publishDate = '{{ .PublishDate.Format "1 January 2006" }}'
-publishDateFull = 'Opublikowano {{ .PublishDate.Format "1 January 2006 3:04" }}'
-publishDateShort = '{{ .PublishDate.Format "1/12/2006" }}'
+publishDate = '{{ .PublishDate.Format "2 January 2006" }}'
+publishDateFull = 'Opublikowano {{ .PublishDate.Format "2 January 2006" }}'
+publishDateShort = '{{ .PublishDate.Format "01/02/2006" }}'
 wordCount = "{{ .WordCount }} słów"
 
 [minuteRead]

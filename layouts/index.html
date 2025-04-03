@@ -2,7 +2,9 @@
 {{ partial "profile.html" . }}
 
 <div id="list-page">
-    {{ $pages := where .Pages "Section" "index" }}
+    {{/*  tutaj niech będa tylko wnioski przeterminowane  */}}
+    {{/*  oraz odnosnik pokaż wszystkie  */}}
+    {{ $pages := where .Site.RegularPages "Section" "index" }}
     {{ $paginator := .Paginate ($pages) }}
     {{ range $paginator.Pages }}
         {{ $title := .Title }}

@@ -5,6 +5,10 @@ languageCode = 'pl_PL'
 
 title = '${site.getTitle()}'
 
+[markup]
+    [markup.goldmark.renderer]
+    unsafe = true
+
 [outputs]
   home = ['html', 'rss', 'json']
   section = ['html', 'rss', 'json']
